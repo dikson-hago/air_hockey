@@ -312,6 +312,7 @@ namespace hockey
         public bool _FREEZE_GAME = false;
         public bool _START_NEW_GAME = false;
         public bool _CLOSE_GAME = false;
+        public bool _FIRST_OPEN_MENU_FORM = false;
 
         public Form1()
         {
@@ -334,6 +335,7 @@ namespace hockey
             enemy_goal_start_location();
 
             show_goal();
+
 
         }
 
@@ -375,6 +377,12 @@ namespace hockey
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            if(!_FIRST_OPEN_MENU_FORM)
+            {
+                _FIRST_OPEN_MENU_FORM = true;
+                open_menu_form();
+            }
+
             if(_CLOSE_GAME) { this.Close(); }
 
             if(_START_NEW_GAME)
@@ -410,12 +418,7 @@ namespace hockey
         {
             if(e.KeyCode == Keys.Escape) { this.Close(); }
             
-            if(e.KeyCode == Keys.M)
-            {
-                MenuForm menu_form = new MenuForm(this);
-                menu_form.Show();
-                _FREEZE_GAME = true;
-            }
+            if(e.KeyCode == Keys.M) { open_menu_form(); }
             
         }
 
@@ -487,6 +490,13 @@ namespace hockey
         {
             enemy_score.Text = "Enemy: " + _my_goal.get_counter_enemy_goals().ToString(); 
             my_score.Text = "You: " + _enemy_goal.get_counter_enemy_goals().ToString(); 
+        }
+
+        public void open_menu_form()
+        {
+            MenuForm menu_form = new MenuForm(this);
+            menu_form.Show();
+            _FREEZE_GAME = true;
         }
 
     }
