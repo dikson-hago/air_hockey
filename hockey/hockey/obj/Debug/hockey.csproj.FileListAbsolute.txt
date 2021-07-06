@@ -1,0 +1,11 @@
+C:\Users\User\OneDrive\Рабочий стол\hockey\hockey\bin\Debug\hockey.exe.config
+C:\Users\User\OneDrive\Рабочий стол\hockey\hockey\bin\Debug\hockey.exe
+C:\Users\User\OneDrive\Рабочий стол\hockey\hockey\bin\Debug\hockey.pdb
+C:\Users\User\OneDrive\Рабочий стол\hockey\hockey\obj\Debug\hockey.csprojAssemblyReference.cache
+C:\Users\User\OneDrive\Рабочий стол\hockey\hockey\obj\Debug\hockey.Form1.resources
+C:\Users\User\OneDrive\Рабочий стол\hockey\hockey\obj\Debug\hockey.Properties.Resources.resources
+C:\Users\User\OneDrive\Рабочий стол\hockey\hockey\obj\Debug\hockey.csproj.GenerateResource.cache
+C:\Users\User\OneDrive\Рабочий стол\hockey\hockey\obj\Debug\hockey.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Рабочий стол\hockey\hockey\obj\Debug\hockey.exe
+C:\Users\User\OneDrive\Рабочий стол\hockey\hockey\obj\Debug\hockey.pdb
+C:\Users\User\OneDrive\Рабочий стол\hockey\hockey\obj\Debug\hockey.MenuForm.resources
